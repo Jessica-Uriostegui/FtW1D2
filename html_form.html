@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poduct Rating</title>
+<style>
+    body{
+          background-color: #6b4e74;
+          margin: 20px; 
+          padding: 0;
+        }
+
+        form {
+            grid-column: span 2;
+            border: none;
+            padding: 10px;
+            text-align: center
+        }
+
+        h1 {
+            font-weight: bold;
+            border: none;
+            color: #326caa;
+            text-align: center
+        }
+        
+        label,p {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            color:rgb(16, 98, 71);
+            font-weight: bold;
+            margin-bottom:5px 
+        }
+
+        button[type="submit"]:hover {
+            background-color: #21885b;
+        }
+        .myDiv {
+        background-color:rgb(225, 158, 238);
+        color:white;
+        padding:20px;
+        border: 5px outset rgb(218, 111, 245);
+        width:300px;
+        height: 500px;
+        margin: auto;  
+        }
+      
+</style>
+</head>
+<body>
+       
+
+<div Class="myDiv">
+    <form>
+    <h1>Product Rating</h1>
+        <!-- Email Input -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        
+        <!-- Number Input -->
+        <label for="quantity">Quantity of Pack:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" min="1" max="10" step="1" required>
+
+        <!-- Date Input -->
+        <label for="date">Purchased Date</label>
+        <input type="date" id="date" name="date" min="2023-01-01" max="2025-12-31" required>
+        <br><br>
+
+        <!-- Range Input-->
+        <label for="range">Rate the Product:</label>
+        <input type="range" id="range" name="range" min="1" max="10">
+        <p>1 - 10                    </p>
+        
+
+        <!-- Color Input -->
+        <label for="color">Choose the color Item:</label>
+        <input type="color" id="color" name="color" value="#880E4F">
+        <br><br>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</div> 
+</body>
+</html>
